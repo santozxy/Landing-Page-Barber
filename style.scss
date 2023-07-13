@@ -1,8 +1,8 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
 }
 
 @import "partials/colors";
@@ -10,44 +10,44 @@
 @import "partials/layout";
 
 body {
-    font-family: 'Sora', sans-serif;
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    background-color: $primary-normal;
+  font-family: "Sora", sans-serif;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: $primary-normal;
 }
 
-h2{
-    text-transform: uppercase;
-    font-size: 2.5rem;
+h2 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
 }
 
 button {
-    font-family: 'Sora', sans-serif;
-    cursor: pointer;
+  font-family: "Sora", sans-serif;
+  cursor: pointer;
 }
 
 svg {
-    width: 100%;
+  width: 100%;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 a {
-    cursor: pointer;
-    text-decoration: none;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-i{
-    font-size: 2rem;
+i {
+  font-size: 2rem;
 }
 
 hr.rounded {
-    margin-top: 3rem;
-    width: 90vw;
-    border-top: 3px solid #bbb;
-    border-radius: 5px;
-    opacity: 0.3;
-  }
+  margin-top: 3rem;
+  width: 90vw;
+  border-top: 3px solid #bbb;
+  border-radius: 5px;
+  opacity: 0.3;
+}
