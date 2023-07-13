@@ -38,14 +38,21 @@ i {
   }
 }
 .header-button {
-  padding: 8px 10px;
+  padding: 0.3rem 0.425rem;
   border-radius: 4px;
   color: #fff;
   background-color: transparent;
   transition: background-color 0.8s;
 }
 
-.header-button:hover, .actived {
+.header-button:hover {
+  border: 1px solid #d34040;
+  background-color: #d94140;
+}
+
+.actived {
+  margin-right: 0.2rem;
+  transform: scale(1.1);
   border: 1px solid #d34040;
   background-color: #d94140;
 }
@@ -61,6 +68,10 @@ i {
   height: 15rem;
 }
 
+.menu a {
+  font-size: 1.3rem;
+}
+
 @media screen and (max-width: 768px) {
   .header-content {
     width: 100%;
@@ -72,6 +83,11 @@ i {
     margin-top: 1rem;
     margin-bottom: 3rem;
     font-size: 2.3rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .menu a {
+    font-size: 1rem;
   }
 }
 .container {
@@ -88,7 +104,7 @@ i {
   content: "";
   display: block;
   position: absolute;
-  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../assets/bgi.jpg");
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../assets/bg.jpg");
   left: 0;
   top: 0;
   width: 100%;
@@ -106,13 +122,13 @@ i {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 14px;
+  padding: 0.825;
 }
 .hero h1 {
   text-align: center;
   line-height: 150%;
   max-width: 940px;
-  font-size: 46px;
+  font-size: 2.9rem;
 }
 .hero p {
   text-align: center;
@@ -127,7 +143,7 @@ i {
   border-radius: 0.5rem;
   font-size: 1.1rem;
   font-weight: 600;
-  margin: 14px 0;
+  margin: 0.825rem 0;
 }
 
 .button-contact:hover {
@@ -154,7 +170,7 @@ i {
   align-items: center;
   justify-content: center;
   gap: 0.8rem;
-  padding: 34px 14px 64px 14px;
+  padding: 2.125rem 0.825rem 4rem 0.825rem;
 }
 .about-content img {
   max-width: 570px;
@@ -202,7 +218,7 @@ i {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  padding: 0 24px 60px 24px;
+  padding: 0 1.5rem 3.75rem 1.5rem;
 }
 
 .haircut {
@@ -211,7 +227,7 @@ i {
   flex-direction: column;
   overflow: hidden;
   background-color: #fff;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   box-shadow: 0 -1px 17px -4px rgba(0, 0, 0, 0.5);
 }
 .haircut img {
@@ -242,8 +258,8 @@ i {
 .haircut-info button {
   color: #fff;
   background-color: #d94140;
-  padding: 4px 8px;
-  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
   border: 0;
   cursor: default;
 }
@@ -254,7 +270,7 @@ i {
 }
 
 iframe {
-  width: 80%;
+  width: 90%;
   height: 60vh;
   display: flex;
   align-items: center;
@@ -285,6 +301,15 @@ footer {
   animation: translateY 0.8s infinite alternate;
 }
 
+footer img {
+  width: 16rem;
+  height: 16rem;
+}
+
+footer p {
+  text-align: center;
+}
+
 .btn-wpp {
   position: fixed;
   right: 1rem;
@@ -302,9 +327,9 @@ footer {
 .btn-wpp .tooltip-text {
   visibility: hidden;
   position: absolute;
-  width: 120px;
-  top: 8px;
-  left: -144px;
+  width: 7.5rem;
+  top: 0.5rem;
+  left: -9rem;
   padding: 7px;
   text-align: center;
   background-color: #232224;
@@ -325,7 +350,7 @@ footer {
   }
   .hero h1 {
     font-size: 2rem;
-    padding: 0 14px;
+    padding: 0 0.825rem;
     width: 100%;
   }
   .hero p {
@@ -341,7 +366,7 @@ footer {
 @media screen and (max-width: 480px) {
   .hero h1 {
     font-size: 1.5rem;
-    padding: 0 14px;
+    padding: 0 0.875rem;
     width: 100%;
   }
   .haircuts {
@@ -349,6 +374,9 @@ footer {
   }
   .haircut img {
     max-width: 480px;
+  }
+  footer p {
+    font-size: 0.9rem;
   }
 }
 body {
