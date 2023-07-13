@@ -1,3 +1,5 @@
+//////////////// Início ///////////////
+
 .container {
     max-width: 1080px;
     margin: 0 auto;
@@ -60,6 +62,18 @@
     animation: scaleButton .8s alternate infinite;
 }
 
+@keyframes scaleButton {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+//////////////// Sobre ///////////////
+
 .about {
     background-color: $primary-normal;
     overflow: hidden;
@@ -95,6 +109,9 @@
         line-height: 150%;
     }
 }
+
+//////////////// Serviços ///////////////
+
 
 .services {
     background-color: $white-normal;
@@ -171,11 +188,26 @@
     border: 0;
     cursor: default;
 }
+//////////////// Localização ///////////////
 
 .location{
     width: 100%;
     background-color: $white-normal;
 }
+
+iframe{
+    width: 80%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: 0;
+    margin: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px;
+}
+
+//////////////// Rodapé ///////////////
 
 footer {
     display: flex;
@@ -236,30 +268,10 @@ footer {
 }
 
 
-iframe{
-    width: 80%;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0.5rem;
-    border: 0;
-    margin: 5rem;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px;
-}
 
 
 //Responsividade
 
-@keyframes scaleButton {
-    from {
-        transform: scale(1);
-    }
-
-    to {
-        transform: scale(1.1);
-    }
-}
 
 @media screen and (max-width:768px) {
     .hero {

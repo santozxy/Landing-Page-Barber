@@ -34,24 +34,29 @@ i {
 }
 
 .header-button{
-    border: 1px solid $white-normal;
-    padding:  8px 10px;
+    padding:  .5rem .625rem;
     border-radius: 4px;
     color: $white-normal;
     background-color: transparent;
     transition: background-color 0.8s;
 }
 
-.header-button:hover{
+.header-button:hover, .actived {
     border: 1px solid $red-light;
     background-color: $red-normal;
 }
+
 
 .header-logo{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 1rem;
+
+    img{
+        width: 15rem;
+        height: 15rem;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -62,14 +67,9 @@ i {
         justify-content: center;
     }
     .header-content i{
-        margin-top: 16px;
-        font-size: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        font-size: 2.3rem;
     }
-    .header-button{
-        display: none;
-    }
-    .header-logo img{
-        width: 10rem;
-        margin-top: 46px;
-    }    
+
 }

@@ -22,12 +22,13 @@
     <title>BarberShop</title>
   </head>
   <body>
-    <div class="bg-home">
+    <div class="bg-home" id="home">
+      <!-- HEADER -->
       <header>
         <nav class="header-content container">
           <div class="header-logo" data-aos="fade-up" data-aos-delay="300">
             <img
-              src="assets/logo.svg"
+              src="assets/logo.png"
               alt="logo da barbearia"
               data-aos="flip-up"
               data-aos-delay="400"
@@ -47,10 +48,20 @@
             ></a>
           </div>
 
+          <div class="menu" data-aos="fade-down">
+            <a class="header-button actived" href="#home">Início</a>
+            <a class="header-button" href="#about">Sobre</a>
+            <a class="header-button" href="#services">Serviços</a>
+            <a class="header-button" href="#location">Localização</a>
+          </div>
         </nav>
         <main class="hero container" data-aos="fade-up" data-aos-delay="400">
           <h1>ESTILO É UM REFLEXO DA SUA ATITUDE E SUA PERSONALIDADE</h1>
-          <p>Horário de funcionamento: 09:00 ás 18:00</p>
+          <p>
+            Um corte de excelência, uma barba impecável. Bem-vindo à nossa
+            barbearia, <br />
+            onde estilo e tradição se encontram.
+          </p>
           <a
             href="https://api.whatsapp.com/send?phone=5511000000000&text=Quero%20fazer%20um%20agendamento%20hoje!"
             class="button-contact"
@@ -62,7 +73,9 @@
       </header>
     </div>
 
-    <section class="about">
+    <!-- SOBRE -->
+
+    <section class="about" id="about">
       <div class="about-content container">
         <div data-aos="zoom-in" data-aos-delay="100">
           <img src="assets/images.svg" alt="Imagens tiradas na barbearia" />
@@ -89,7 +102,10 @@
         </div>
       </div>
     </section>
-    <section class="services">
+
+    <!-- SERVIÇOS -->
+
+    <section class="services" id="services">
       <div
         class="services-content container"
         data-aos="fade-up"
@@ -130,9 +146,9 @@
       <hr class="rounded" />
     </section>
 
-    <!-- FOOTER -->
+    <!-- LOCALIZAÇÃO -->
 
-    <div class="services">
+    <div class="services" id="location">
       <h2 data-aos="fade-up" data-aos-delay="250">Nossa localização</h2>
 
       <iframe
@@ -144,6 +160,8 @@
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
+
+    <!-- FOOTER -->
 
     <footer>
       <div class="footer-icons">
@@ -158,10 +176,12 @@
         ></a>
       </div>
       <div>
-        <img src="assets/logo.svg" alt="Logo Barbearia" />
+        <img src="assets/logo.png" alt="Logo Barbearia" />
       </div>
       <p>Copyright 2023 | BarberShop - Todos direitos reservados.</p>
     </footer>
+
+    <!-- BOTÃO WHATSAPP -->
 
     <a
       href="https://api.whatsapp.com/send?phone=5511000000000&text=Quero%20fazer%20um%20agendamento%20hoje!"
